@@ -7,4 +7,4 @@ RUN apk add bash
 
 ENV command echo run your command
 
-CMD ["bash", "-c", "while true; do ${command}; done "]
+CMD ["bash", "-c", "Echo running (in background) task: ${command} && while true; do ${command}; done "]
